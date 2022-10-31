@@ -30,7 +30,7 @@
 
         <Entry x:Name="txtnota" Placeholder="Ingrese nota" Keyboard="Text" />
 
-        <Button x:Name="btnsalvar" Text="Salvar" Clicked="btnsalvar_Clicked"/>
+        <Button x:Name="Btnsalvar" Text="Salvar" Clicked="Btnsalvar_Clicked"/>
 
 
     </StackLayout>

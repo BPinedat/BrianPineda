@@ -5,15 +5,15 @@
     
     
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Agregar" x:Name="tooladd" Clicked="tooladd_Clicked"/>
-        <ToolbarItem Text="Mapa"/>
+        <ToolbarItem Text="Agregar" x:Name="tooladd" Clicked="Tooladd_Clicked"/>
+        <ToolbarItem Text="Mapa" x:Name="toolmap" Clicked="Toolmap_Clicked"/>
     </ContentPage.ToolbarItems>
     
     
     <CollectionView x:Name="listemple"
                     Margin="10"
                     SelectionMode="Single"
-                    SelectionChanged="listemple_SelectionChanged">
+                    SelectionChanged="Listemple_SelectionChanged">
 
         <CollectionView.ItemsLayout>
             <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />

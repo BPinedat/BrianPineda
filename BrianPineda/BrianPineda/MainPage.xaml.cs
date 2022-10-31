@@ -16,7 +16,7 @@ namespace BrianPineda
 
         }
 
-        private  async void btnsalvar_Clicked(object sender, EventArgs e)
+        private  async void Btnsalvar_Clicked(object sender, EventArgs e)
         {
             var contac = new Moldes.Contactos
             {
@@ -28,7 +28,7 @@ namespace BrianPineda
                 Nota = txtnota.Text
             };
 
-            if (await App.dBContactos.Storecontac(contac) > 0)
+            if (await App.DBContactos.Storecontac(contac) > 0)
                 await DisplayAlert("Aviso", "Registro ingresado con exito", "ok");
             
 

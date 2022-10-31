@@ -20,17 +20,22 @@ namespace BrianPineda.Views
         {
             base.OnAppearing();
 
-            listemple.ItemsSource = await App.dBContactos.listarcontactos(); 
+            listemple.ItemsSource = await App.DBContactos.listarcontactos(); 
 
         }
-        private async void tooladd_Clicked(object sender, EventArgs e)
+        private async void Tooladd_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage());
         }
 
-        private void listemple_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Listemple_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private async void Toolmap_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PageMap());
         }
     }
 }

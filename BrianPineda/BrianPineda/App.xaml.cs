@@ -9,7 +9,7 @@ namespace BrianPineda
     {
         static Controllers.DBContactos Dbcontac;
 
-        public static Controllers.DBContactos dBContactos
+        public static Controllers.DBContactos DBContactos
         {
             get
             {
