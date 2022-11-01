@@ -18,6 +18,12 @@ namespace BrianPineda
 
         private  async void Btnsalvar_Clicked(object sender, EventArgs e)
         {
+
+            if (txtnombre.Text == " ")
+            {
+                await DisplayAlert("Aviso", "Ingresar Nombre", "Error");
+            }
+                
             var contac = new Moldes.Contactos
             {
                 Nombres = txtnombre.Text,
@@ -30,7 +36,6 @@ namespace BrianPineda
 
             if (await App.DBContactos.Storecontac(contac) > 0)
                 await DisplayAlert("Aviso", "Registro ingresado con exito", "ok");
-            
 
         }
     }
